@@ -33,6 +33,15 @@ body {
     display: flex;
 }
 
+.tab {
+    text-indent: 30px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* general-end*/
 
 /* header */
@@ -108,12 +117,88 @@ nav a{
 
 .aboutme-content {
     width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.aboutme-paragraph {
+    width: 90%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    line-height: 1.2;
+}
+
+.aboutme-img {
+    align-self: center;
+}
+
 
 /* about me-end */
 
 /* projects */
 
+.projects {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-container a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.projectcard {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    height: 100px;
+    position: relative;
+    left: 10%;
+    background-size: cover;
+}
+
+.projectcard h3 {
+    font-size: 16px;
+
+}
+
+.projectcard h4 {
+    font-size: 12px;
+}
+
+.projectbox {
+    z-index: 2;
+    background-color: var(--color3);
+    width: 50%;
+    padding: 5px;
+}
+
+.project1 {
+    height: 200px;
+    background-image: url("../images/card1.jpg");
+}
+
+.project2 {
+    background-image: url("../images/card2.jpg")
+}
+
+.project3 {
+    background-image: url("../images/card3.jpg")
+}
+
+.project4 {
+    background-image: url("../images/card4.jpg")
+}
+
+.project5 {
+    background-image: url("../images/card5.jpg")
+}
 /* projects-end */
 
 /* contact */
