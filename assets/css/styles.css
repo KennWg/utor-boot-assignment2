@@ -27,6 +27,7 @@ body {
     width: 50%;
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(180, 158, 158, 0.5);
 }
 
 .flex {
@@ -59,6 +60,7 @@ header h1 {
     color:  var(--color2);
     font-size: 30px;
     padding: 10px 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* navigation */
@@ -70,7 +72,7 @@ nav {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -85,6 +87,7 @@ nav a{
     font-size: 18px;
     font-weight: bolder;
     padding: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 nav ul li a:hover {
@@ -110,6 +113,7 @@ nav ul li a:hover {
 .hero h2 {
     color: var(--color2);
     padding: 10px 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* hero-end */
@@ -131,7 +135,7 @@ nav ul li a:hover {
     width: 90%;
     padding-left: 5%;
     padding-bottom: 10px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .aboutme-img {
@@ -151,7 +155,7 @@ nav ul li a:hover {
 .project-container {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .project-container a {
@@ -186,7 +190,7 @@ nav ul li a:hover {
 }
 
 .project1 {
-    height: 200px;
+    height: 150px;
     background-image: url("../images/card1.jpg");
 }
 
@@ -252,16 +256,121 @@ footer p {
 
 /* media queries */
 
-/*
 
 @media (min-width: 768px) {
 
+    /* header adjustments */
+
+    header h1 {
+        width: 40%;
+    }
+
+    nav {
+        width: 60%;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        width: 25%;
+    }
+
+    /* project card adjustments */
+
+    .project1 {
+        height: 200px;
+    }
+
+    .project1 .projectbox {
+        width: 25%;
+    }
+
+    .project2, .project3, .project4, .project5 {
+        width: 40%;
+        height: 200px;
+    }
+
+    /* contact section centering */
+
+    .contact {
+        text-align: center;
+    }
 }
 
-@media (min-width: 992px ) {
+
+
+@media (min-width: 1024px ) {
+
+    /* header adjustments */
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    nav ul li {
+        width: 25%;
+    }
+
+    /* section adjustments */
+
+    .section-title {
+        width: 15%;
+        border-bottom: none;
+        border-right: 2px solid var(--color2);
+        padding: 60px 5px 60px 0;
+        font-size: 30px;
+    }
+
+    /* aboutme layout change */
+
+    .aboutme {
+        align-items: center;
+    }
+
+    .aboutme-content {
+        width: 85%;
+        padding-top: 20px;
+        flex-direction: row;
+    }
+
+    .aboutme-paragraph {
+        width: 80%;
+    }
+
+    .aboutme-img {
+        width: 15%;
+        padding-left: 20px;
+    }
+
+    /* projects layout change */
+
+    .projects {
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    .project-container {
+        width: 85%;
+        justify-content: start;
+    }
+    .project1 {
+        width: 80%;
+    }
+
+    .project2, .project3, .project4, .project5 {
+        width: 40%;
+    }
+
+    /* contact layout change */
+
+    .contact address {
+        width: 85%;
+        align-self: center;
+    }
 
 }
 
-/*
-
-/* medioa queries-end */
+/* media queries-end */
