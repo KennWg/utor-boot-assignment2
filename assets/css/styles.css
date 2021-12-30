@@ -84,7 +84,13 @@ nav a{
     text-decoration: none;
     font-size: 18px;
     font-weight: bolder;
-    
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background: var(--color3);
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /* navigation-end */
@@ -203,9 +209,44 @@ nav a{
 
 /* contact */
 
+.contact {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact address {
+    width: 90%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li {
+    padding-bottom: 10px;
+}
+
+.contact span {
+    color: var(--color4);
+}
 /* contact-end */
 
 /* footer */
+
+footer {
+    padding: 10px;
+    border-top: 4px solid var(--color4);
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+}
 
 /* footer-end */
 
