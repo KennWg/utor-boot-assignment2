@@ -22,7 +22,7 @@ body {
 
 .section-title {
     color: var(--color1);
-    padding: 20px 10px 6px;
+    padding: 40px 10px 6px;
     border-bottom: 2px solid var(--color2);
     width: 50%;
     text-align: center;
@@ -338,7 +338,7 @@ footer p {
     .section-title {
         width: 15%;
         border-bottom: none;
-        border-right: 2px solid var(--color2);
+        border-right: 3px solid var(--color2);
         padding: 60px 5px 60px 0;
         font-size: 35px;
     }
@@ -370,6 +370,10 @@ footer p {
     .projects {
         align-items: flex-start;
         padding-top: 50px;
+    }
+
+    .projects h2 {
+        padding-bottom: 200px;
     }
 
     .project-container {
