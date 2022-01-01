@@ -7,15 +7,15 @@
 }
 
 :root {
-    --color1: #0A369D;
-    --color2: #5E7CE2;
+    --color1: #5E7CE2;
+    --color2: #f4f5ff;
     --color3: #CFDEE7;
     --color4: #92B4F4;
-    --color5: black;    
+    --color5: #3A3B3c;    
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color2);
     background-color: var(--color5);
 }
@@ -184,7 +184,7 @@ nav ul li a:hover {
 
 .projectbox {
     z-index: 2;
-    background-color: var(--color3);
+    background-color: var(--color1);
     width: 50%;
     padding: 5px;
 }
